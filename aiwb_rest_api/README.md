@@ -1,17 +1,20 @@
-microblog
+DataNet and ModelNet Predix Microservices
 =========
-
-A decently featured microblogging web application written in Python and Flask that I'm developing in my Flask Mega-Tutorial series that begins [here](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
+Schema design, migration, database versioning, and REST API for DataNet and ModelNet microservices as a part of deployement of AIWB to the platform. See the confluence page
+[here](https://devcloud.swcoe.ge.com/devspace/pages/viewpage.action?pageId=1206595873).
 
 Installation
 ------------
 
-The tutorial referenced above explains how to setup a virtual environment with all the required modules.
+Create a virtual envoironment.
+Install the dependencies with `pip install -r requirements.txt`
+Create the database with `db_create.py` script.
+Check-in your database updates to the db_repository folder with `db_migrate.py` script.
+Push your updates to database with `db_upgrade.py` script.
+Rollback your database to the last version with `db_downgrade.py` script.
 
-The sqlite database must also be created before the application can run, and the `db_create.py` script takes care of that. See the [Database tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database) for the details.
+
 
 Running
 -------
-
-To run the application in the development web server just execute `run.py` with the Python interpreter from the flask virtual environment.
-
+Run the app with `run.py` script from your virtual env.
