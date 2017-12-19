@@ -7,11 +7,11 @@ Installation
 ------------
 
 Create a virtual envoironment.
-Install the dependencies with `pip install -r requirements.txt`.<br />
+Install the dependencies with `pip install -r requirements.txt`<br />
 Create the database with `db_create.py` script.<br />
-Check-in your database updates to the db_repository folder with `db_migrate.py`.<br />
-Push your updates to database with `db_upgrade.py`.<br />
-[Rollback your database to the last version with `db_downgrade.py`.]<br />
+Check-in your database updates to the db_repository folder with `db_migrate.py`<br />
+Push your updates to database with `db_upgrade.py`<br />
+( You can rollback your database to the last version with `db_downgrade.py`)<br />
 
 
 
